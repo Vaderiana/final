@@ -30,6 +30,7 @@ dependencies {
     testImplementation 'com.google.code.gson:gson:2.8.6'
     testImplementation 'io.qameta.allure:allure-selenide:2.16.1'
     testImplementation 'commons-dbutils:commons-dbutils:1.7'
+    testImplementation 'mysql:mysql-connector-java:8.0.18'
 }
 
 test {
