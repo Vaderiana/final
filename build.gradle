@@ -37,3 +37,10 @@ test {
     useJUnitPlatform()
     systemProperty 'selenide.headless', System.getProperty('selenide.headless')
 }
+
+task runApp(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    environment 'DB_URL', System.getenv('DB_URL')
+    environment 'DB_USER', System.getenv('DB_USER')
+    environment 'DB_PASS', System.getenv('DB_PASS')
+}
